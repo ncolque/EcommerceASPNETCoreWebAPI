@@ -33,3 +33,10 @@ D:\projects\net\EcommerceASPNETCoreWebAPI\obj\Debug\net8.0\refint\EcommerceASPNE
 D:\projects\net\EcommerceASPNETCoreWebAPI\obj\Debug\net8.0\EcommerceASPNETCoreWebAPI.pdb
 D:\projects\net\EcommerceASPNETCoreWebAPI\obj\Debug\net8.0\EcommerceASPNETCoreWebAPI.genruntimeconfig.cache
 D:\projects\net\EcommerceASPNETCoreWebAPI\obj\Debug\net8.0\ref\EcommerceASPNETCoreWebAPI.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\projects\net\EcommerceASPNETCoreWebAPI\obj\Debug\net8.0\EcommerceASPNETCoreWebAPI.sourcelink.json

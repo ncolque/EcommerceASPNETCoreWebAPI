@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "EcommerceASPNETCoreWebAPI.Controllers.ProductoController",
+    "Method": "Listar",
+    "RelativePath": "api/Producto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EcommerceASPNETCoreWebAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
