@@ -22,5 +22,16 @@ namespace EcommerceASPNETCoreWebAPI.Controllers
             List<Producto> listaProductos = await _productoData.ListarProductosAsync();
             return StatusCode(StatusCodes.Status200OK, listaProductos);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Crear([FromBody] Producto producto)
+        {
+            bool resp = await _productoData.CrearProductoAsync(producto);
+            if (!resp)
+            {
+                return BadRequest();
+            }
+            return Ok();
+        }
     }
 }

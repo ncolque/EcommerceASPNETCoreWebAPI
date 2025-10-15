@@ -1,5 +1,6 @@
 ﻿using EcommerceASPNETCoreWebAPI.Entities;
-using System.Data.SqlClient;
+//using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Data;
 
 namespace EcommerceASPNETCoreWebAPI.Data
@@ -46,5 +47,32 @@ namespace EcommerceASPNETCoreWebAPI.Data
             }
             return listarProductos;
         }
+
+        public async Task<bool> CrearProductoAsync(Producto producto)
+        {
+            bool respuesta = true;
+
+            using (var conn = new SqlConnection(this._conexion))
+            {
+                await conn.OpenAsync();
+
+                using (var cmd = new SqlCommand("sp_crear_producto", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("Nombre", producto.Nombre);
+                    cmd.Parameters.AddWithValue("Descripcion", producto.Descripcion);
+                    cmd.Parameters.AddWithValue("Precio", producto.Precio);
+                    cmd.Parameters.AddWithValue("Cantidad", producto.Cantidad);
+                    cmd.Parameters.AddWithValue("Estado", producto.Estado);
+                    cmd.Parameters.AddWithValue("Habilitado", producto.Habilitado);
+                    cmd.Parameters.AddWithValue("Eliminado", producto.Eliminado);
+
+                    respuesta = await cmd.ExecuteNonQueryAsync() > 0 ? true : false;
+                }
+            }
+            return respuesta;
+        }
+
+
     }
 }
